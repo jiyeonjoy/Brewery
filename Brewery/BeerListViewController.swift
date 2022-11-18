@@ -50,11 +50,14 @@ extension BeerListViewController {
     }
 }
 
+// 페이징 처리!
 extension BeerListViewController: UITableViewDataSourcePrefetching {
     func tableView(_ tableView: UITableView, prefetchRowsAt indexPaths: [IndexPath]) {
+        // 첫번째 페이지에서는 fetchBeer 호출하기 때문에 2페이지 부터 더 불러오게 설정
         guard currentPage != 1 else { return }
         
         indexPaths.forEach {
+            // 현재 페이지가 전체페이지 갯수와 같을때 fetchBeer 호출
             if ($0.row + 1)/25 + 1 == currentPage {
                 self.fetchBeer(of: currentPage)
             }
@@ -65,7 +68,7 @@ extension BeerListViewController: UITableViewDataSourcePrefetching {
 private extension BeerListViewController {
     func fetchBeer(of page: Int) {
         guard let url = URL(string: "https://api.punkapi.com/v2/beers?page=\(page)"),
-            dataTasks.firstIndex(where: { $0.originalRequest?.url == url }) == nil else { return } //이미 Beer를 패칭했음. 그렇지 않다면,
+            dataTasks.firstIndex(where: { $0.originalRequest?.url == url }) == nil else { return } //이미 Beer를 패칭했음. 그렇지 않다면, -> 이미 호출한 url 은 다신 호출하지 않음.
         
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
