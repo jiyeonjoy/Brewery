@@ -16,6 +16,7 @@
 		277506FF29274DBF005DF5E7 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 277506FE29274DBF005DF5E7 /* Kingfisher */; };
 		2775070129274DF6005DF5E7 /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2775070029274DF6005DF5E7 /* Beer.swift */; };
 		2775070329274F09005DF5E7 /* BeerListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2775070229274F09005DF5E7 /* BeerListCell.swift */; };
+		27750705292750DB005DF5E7 /* BeerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27750704292750DB005DF5E7 /* BeerDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		277506F829272F7B005DF5E7 /* BeerListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListViewController.swift; sourceTree = "<group>"; };
 		2775070029274DF6005DF5E7 /* Beer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
 		2775070229274F09005DF5E7 /* BeerListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListCell.swift; sourceTree = "<group>"; };
+		27750704292750DB005DF5E7 /* BeerDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 				277506F829272F7B005DF5E7 /* BeerListViewController.swift */,
 				2775070029274DF6005DF5E7 /* Beer.swift */,
 				2775070229274F09005DF5E7 /* BeerListCell.swift */,
+				27750704292750DB005DF5E7 /* BeerDetailViewController.swift */,
 			);
 			path = Brewery;
 			sourceTree = "<group>";
@@ -153,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				277506F929272F7B005DF5E7 /* BeerListViewController.swift in Sources */,
+				27750705292750DB005DF5E7 /* BeerDetailViewController.swift in Sources */,
 				277506E529272DCD005DF5E7 /* AppDelegate.swift in Sources */,
 				277506E729272DCD005DF5E7 /* SceneDelegate.swift in Sources */,
 				2775070129274DF6005DF5E7 /* Beer.swift in Sources */,
